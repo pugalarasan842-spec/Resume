@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PugalArasan C | Java Full Stack Developer</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+scroll-behavior:smooth;
+}
+
+body{
+background:#000;
+color:#fff;
+font-family:'Poppins',sans-serif;
+overflow-x:hidden;
+}
+
+/* ==== BACKGROUND GLOW ==== */
+body::before{
+content:"";
+position:fixed;
+top:-200px;
+left:-200px;
+width:600px;
+height:600px;
+background:radial-gradient(circle, rgba(255,140,0,0.5), transparent 70%);
+z-index:-1;
+}
+
+body::after{
+content:"";
+position:fixed;
+bottom:-200px;
+right:-200px;
+width:600px;
+height:600px;
+background:radial-gradient(circle, rgba(255,94,0,0.4), transparent 70%);
+z-index:-1;
+}
+
+/* ==== HEADER ==== */
+header{
+padding:20px 10%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+border-bottom:1px solid rgba(255,140,0,0.2);
+backdrop-filter:blur(10px);
+position:sticky;
+top:0;
+background:rgba(0,0,0,0.7);
+}
+
+.logo{
+font-family:'Playfair Display',serif;
+font-size:28px;
+color:orange;
+letter-spacing:2px;
+}
+
+nav a{
+margin-left:30px;
+text-decoration:none;
+color:#ccc;
+transition:0.3s;
+}
+
+nav a:hover{
+color:orange;
+}
+
+/* ==== HERO ==== */
+.hero{
+height:90vh;
+display:flex;
+justify-content:center;
+align-items:center;
+flex-direction:column;
+text-align:center;
+padding:0 20px;
+}
+
+.hero h1{
+font-size:60px;
+font-family:'Playfair Display',serif;
+background:linear-gradient(to right, orange, #ff5500);
+-webkit-background-clip:text;
+-webkit-text-fill-color:transparent;
+}
+
+.hero p{
+margin:20px 0;
+color:#aaa;
+font-size:18px;
+}
+
+.btn{
+padding:12px 35px;
+border:1px solid orange;
+color:orange;
+text-decoration:none;
+border-radius:30px;
+transition:0.4s;
+}
+
+.btn:hover{
+background:orange;
+color:black;
+box-shadow:0 0 25px orange;
+}
+
+/* ==== SECTIONS ==== */
+section{
+padding:80px 10%;
+}
+
+.section-title{
+font-size:32px;
+margin-bottom:40px;
+font-family:'Playfair Display',serif;
+color:orange;
+text-align:center;
+}
+
+/* ==== CARDS ==== */
+.card{
+background:rgba(255,255,255,0.05);
+border:1px solid rgba(255,140,0,0.3);
+backdrop-filter:blur(15px);
+padding:30px;
+border-radius:15px;
+margin-bottom:25px;
+transition:0.4s;
+}
+
+.card:hover{
+transform:translateY(-10px);
+box-shadow:0 0 30px rgba(255,140,0,0.4);
+}
+
+/* ==== GRID ==== */
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:25px;
+}
+
+/* ==== SKILL ICON ==== */
+.skill-card{
+text-align:center;
+}
+
+.skill-icon{
+width:90px;
+height:90px;
+margin:0 auto 20px;
+border-radius:50%;
+display:flex;
+align-items:center;
+justify-content:center;
+background:rgba(255,140,0,0.1);
+border:1px solid rgba(255,140,0,0.4);
+transition:0.4s;
+}
+
+.skill-icon img{
+width:50px;
+}
+
+.skill-card:hover .skill-icon{
+background:orange;
+box-shadow:0 0 25px orange;
+transform:scale(1.1);
+}
+
+.skill-card:hover img{
+filter:brightness(0);
+}
+
+/* ==== CONTACT ==== */
+.contact a{
+color:orange;
+text-decoration:none;
+}
+
+/* ==== FOOTER ==== */
+footer{
+text-align:center;
+padding:30px;
+border-top:1px solid rgba(255,140,0,0.2);
+color:#777;
+}
+
+/* ==== RESPONSIVE ==== */
+@media(max-width:768px){
+.hero h1{
+font-size:38px;
+}
+header{
+flex-direction:column;
+}
+nav{
+margin-top:10px;
+}
+}
+
+</style>
+</head>
+<body>
+
+<header>
+<div class="logo">PugalArasan C</div>
+<nav>
+<a href="#about">About</a>
+<a href="#education">Education</a>
+<a href="#skills">Skills</a>
+<a href="#contact">Contact</a>
+</nav>
+</header>
+
+<div class="hero">
+<h1>PugalArasan C</h1>
+<p>Luxury Java Full Stack Developer Portfolio</p>
+<a href="#contact" class="btn">Hire Me</a>
+</div>
+
+<section id="about">
+<h2 class="section-title">Career Objective</h2>
+<div class="card">
+<p>
+Mechanical Engineering graduate passionate about building scalable and elegant web applications.
+Skilled in Java, Spring Boot, React, SQL and modern frontend technologies.
+Seeking an opportunity as a Java Full Stack Developer to contribute to innovative projects.
+</p>
+</div>
+</section>
+
+<section id="education">
+<h2 class="section-title">Education</h2>
+
+<div class="grid">
+
+<div class="card">
+<h3>B.E Mechanical Engineering</h3>
+<p>Jaya Engineering College – Tirunathavur</p>
+</div>
+
+<div class="card">
+<h3>HSC – Commerce (70%)</h3>
+<p>Devagar HR Sec School – Ramnathapuram</p>
+</div>
+
+<div class="card">
+<h3>SSLC (80%)</h3>
+<p>Devagar HR Sec School – Ramnathapuram</p>
+</div>
+
+</div>
+</section>
+
+<section id="skills">
+<h2 class="section-title">Technical Expertise</h2>
+
+<div class="grid">
+
+<div class="card skill-card">
+<div class="skill-icon">
+<img src="images/java.png" alt="Java">
+</div>
+<h3>Java</h3>
+<p>OOP, Collections, Multithreading, Backend Development.</p>
+</div>
+
+<div class="card skill-card">
+<div class="skill-icon">
+<img src="images/spring.png" alt="Spring Boot">
+</div>
+<h3>Spring Boot</h3>
+<p>REST APIs, MVC Architecture, Secure Backend Systems.</p>
+</div>
+
+<div class="card skill-card">
+<div class="skill-icon">
+<img src="images/react.png" alt="React">
+</div>
+<h3>React JS</h3>
+<p>Component-Based UI, Hooks, Dynamic Applications.</p>
+</div>
+
+<div class="card skill-card">
+<div class="skill-icon">
+<img src="images/html.png" alt="HTML">
+</div>
+<h3>HTML</h3>
+<p>Semantic Structure, SEO Friendly Markup.</p>
+</div>
+
+<div class="card skill-card">
+<div class="skill-icon">
+<img src="images/css.png" alt="CSS">
+</div>
+<h3>CSS</h3>
+<p>Responsive Design, Flexbox, Grid, Animations.</p>
+</div>
+
+<div class="card skill-card">
+<div class="skill-icon">
+<img src="images/js.png" alt="JavaScript">
+</div>
+<h3>JavaScript</h3>
+<p>DOM Manipulation, ES6+, Interactive UI.</p>
+</div>
+
+<div class="card skill-card">
+<div class="skill-icon">
+<img src="images/mysql.png" alt="SQL">
+</div>
+<h3>SQL</h3>
+<p>Database Design, Joins, Query Optimization.</p>
+</div>
+
+</div>
+</section>
+
+<section id="contact">
+<h2 class="section-title">Contact</h2>
+<div class="card contact">
+<p>Email: <a href="mailto:pugalarasan842@gmail.com">pugalarasan842@gmail.com</a></p>
+<p>Phone: 9943788219</p>
+<p>GitHub: <a href="https://github.com/pugalarasan842-spec" target="_blank">github.com/pugalarasan842-spec</a></p>
+</div>
+</section>
+
+<footer>
+© 2026 PugalArasan C | Java Full Stack Developer
+</footer>
+
+</body>
+</html>
